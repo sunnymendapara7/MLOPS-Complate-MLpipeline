@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 import logging
 from sklearn.ensemble import RandomForestClassifier
-# import yaml
+import yaml
 
 # Ensure the "logs" directory exists
 log_dir = 'logs'
@@ -119,7 +119,7 @@ def save_model(model, file_path: str) -> None:
 
 def main():
     try:
-        # params = load_params('params.yaml')['model_building']
+        params = load_params('params.yaml')['model_building']
         params = {'n_estimators': 22,'random_state': 2}
         train_data = load_data('./data/processed/train_tfidf.csv')
         X_train = train_data.iloc[:, :-1].values
