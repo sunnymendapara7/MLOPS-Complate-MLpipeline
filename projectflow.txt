@@ -24,6 +24,11 @@ Expermients with DVC:
 17> Change params, re-run code (produce new experiments)
 18> Now git add, commit, push
 
+
+Extra:
+  > Remove/delete AWS resources
+  > Adding stage to dvc.yaml: "dve stage add -n data_ingestion -d sre/data_ingestion.py -o data/raw python src/data_ingestion.py"
+
 -------------------------------------------------------------------------------
 
 params.yaml setup:
